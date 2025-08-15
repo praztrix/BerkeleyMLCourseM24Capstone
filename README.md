@@ -11,18 +11,30 @@ The ability to accurately understand image content holds immense value across di
 
 Image classification is the task of assigning a specific label or a category to images. Before CNNs, image classification largely relied on hand-crafted features and traditional machine learning algorithms. Researchers would meticulously design algorithms to extract specific visual characteristics from images, like edges, corners, or color histograms. These extracted features were then fed into classifiers such as Support Vector Machines (SVMs) or decision trees.  This approach was highly dependent on human expertise in feature engineering, making it rigid and often struggling with variations in lighting, pose, and background. It was also incredibly time-consuming and often failed to capture the complex, hierarchical patterns present in real-world images. 
 
-![Convolutional Neural Network](https://github.com/praztrix/BerkeleyMLCourseM24Capstone/blob/main/images/CNNAI.png "Convolutional Neurak Network")
-
+<!--![Convolutional Neural Network](https://github.com/praztrix/BerkeleyMLCourseM24Capstone/blob/main/images/CNNAI.png "Convolutional Neural Network") -->
+<center>
+  <center>
+     <img src="https://github.com/praztrix/BerkeleyMLCourseM24Capstone/blob/main/images/CNNAI.png" width="700" height="600" class = "center" alt="CNNAI"/>
+  </center>
+</center>
 The breakthrough came with Convolutional Neural Networks (CNNs), inspired by the human visual cortex. Instead of relying on manual feature extraction, CNNs learn to automatically identify and extract hierarchical features directly from raw image data. This "deep learning" approach allowed models to discover intricate patterns, from simple edges in early layers to complex object parts and entire objects in deeper layers. This ability to learn powerful and robust representations, coupled with increased computational power and larger datasets, led to a dramatic leap in image classification accuracy, far surpassing traditional methods and becoming the dominant approach in the field. 
 
-While numerous open-source image classification CNN architectures exist, their performance varies considerably in terms of memory footprint, latency, and accuracy. This project aims to evaluate these critical metrics for  the following  model architectures using transfer learning.
+While numerous open-source image classification CNN architectures exist, their performance varies considerably in terms of memory footprint, latency, and accuracy. This project aims to evaluate these critical metrics for  the following  model architectures using **transfer learning**.
 
  - MobileNetV2
  - ResNet50V2
  - EfficientNetB0
  - DenseNet121
 
-Transfer learning is an efficient technique used for benchmarking advanced deep learning models. It allows us to leverage pre-existing knowledge of these models and  makes the evaluation process faster and more realistic.
+<!--![Transfer Learning](https://github.com/praztrix/BerkeleyMLCourseM24Capstone/blob/main/images/transfer_learning_cnn_1.png "Transfer Learning")-->
+
+<center>
+  <center>
+     <img src="https://github.com/praztrix/BerkeleyMLCourseM24Capstone/blob/main/images/transfer_learning_cnn_1.png" width="600" height="600" class = "center" alt="Transfer Learning"/>
+  </center>
+
+**Transfer learning** is an efficient technique used for benchmarking advanced deep learning models. It allows us to leverage pre-existing knowledge of these models and  makes the evaluation process faster and more realistic. Pre-trained models, particularly those trained on vast datasets like ImageNet have already learned highly generalizable features. For instance, the early layers of a CNN trained on ImageNet can effectively recognize basic shapes, edges, and textures in any image. By leveraging these robust features, your new model often achieves higher accuracy and better overall performance, especially when your specific dataset is small.
+
 
 ### Data Sources
 
